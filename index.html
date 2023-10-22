@@ -5,7 +5,6 @@
 
 
 <head>
-  <head>
   <img src ="WebBanner2023.png" alt="Banner" width="900" height= "300">
     <h1><b>ENG0018 Computer Laboratory 2023/24</b><h1>
     <h2>Student URN: 6845527</h2>
@@ -30,10 +29,13 @@
               tr:nth-child(even) {
                  background-color: #dddddd;
               }
+<p id="date&time"></p>
 
-
-
-
+<script>
+const d = new Date();
+document.getElementById("date&time").innerHTML = d;
+</script>
+          
         </style>
 
     <style>
@@ -79,12 +81,6 @@ p.ex1 {
 <h5 id=”Introduction”>Introduction</h5>
 </id>
 
-<p id="date&time"></p>
-
-<script>
-const d = new Date();
-document.getElementById("date&time").innerHTML = d;
-</script>
 <body>
       
 <p class="ex1">
