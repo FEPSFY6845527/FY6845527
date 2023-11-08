@@ -1,200 +1,149 @@
 <!DOCTYPE html>
 
-<html>    
+<html>
 
-<title>Change Button Colour</title>
-</head>
-<body>
- <button id="colorButton">Click me to change colour</button>
-<script>
- // Get a reference to the button element
- var button = document.getElementById("colorButton");
- // Function to change the button color
- function changeColor() {
- // Generate a random color (hexadecimal)
- var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+  <head>
+    <img src="WebBanner2023.png" alt="Banner" width="1200" height="300" >
+    <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
+    <h2>Student URN: </h2>
 
- // Set the button's background color to the random color
- button.style.backgroundColor = randomColor;
- }
- // Add a click event listener to the button
- button.addEventListener("click", changeColor);
- </script>
-</body>
+    <hr>
+    <h2 style="font-family:calibri:"><b>Conference Paper: Bridge Deck Repairs</b></h2>
+    <hr>
+   
+    <!style for tables>
+      <style>
+        table{
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 30%;
 
-<head>
-  <img src ="WebBanner2023.png" alt="Banner" width="900" height= "300">
-    <h1><b>ENG0018 Computer Laboratory 2023/24</b><h1>
-    <h2>Student URN: 6845527</h2>
-  <hr>
-  <h2 style=”fontfamily:calibri:”><b>Conference paper: Bridge Deck Repairs</b></h2>   
-  <hr>
-        <!style for tables>
-        <style>
-               table {
-                      font-family: arial, sans-serif;
-                      border-collapse: collapse;
-                      width: 30%;
+        }
 
-              }
+        td, th {
+          border: 1px solid #dddddd;
+          text-alling: left;
+          padding: 8px;
+        }
 
-              td, th {
-                      border: lpx solid #dddddd;
-                      text-allign: left;
-                      padding: 8px;
-              }
+        tr:nth-child(even) {
+          background colour: #dddddd;
+        }
 
-              tr:nth-child(even) {
-                 background-color: #dddddd;
-              }
-          
+
+
+
         </style>
 
     <style>
-p.ex1 {
-  margin-left: 250px;
-}
-</style>
-    </head>
+      p.ex1 {
+        margin-left: 250px;
+      }
+    </style>
+      </head>
 
-<p id="date&time"></p>
-<script>
-const d = new Date();
-document.getElementById("date&time").innerHTML = d;
-</script>
+  <meta name ="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+  .mySlides {display:none;}
+  </style>
+  <body style="background-color:#FFFFFF;margin-left:50px;">
+    <hr>
+   
+        <!table of contents>
+    <table>
 
-<body>
-<!table of contents>
-<table>
+      <tr>
+        <th><h3>Table of contents</h3></th>
+      </tr>
+      <tr>
+        <td><a href="#abstract">Abstract</td>
+      </tr>
+      <tr>
+        <td><a href"=#Introduction">Introduction</td>
+      </tr>
+      <tr>
+        <td><a href"=#Analysis and Discussion">Analysis and Discussion</td>
+      </tr>
+      <tr>
+        <td><a href"References">References</td>
+      </tr>
+    </table>
 
-<tr>
-  <th><h3>Table of contents</h3></th>
-</tr>
-<tr>
-  <td><a href="#Abstract">Abstract</td>
-</tr>
-<tr>
-  <td><a href="#Introduction">Introduction</td>
-</tr>
-<tr>
-  <td><a href="#Analysis and discussion">Analysis and discussion</td>
-</tr>
 
-<tr>
-  <td><a href="#References">References</td>
-</tr>
-</table>
-
-<id>
-<h4 id=”Abstract”>Abstract</h4>
-</id>
-  
-<id>
-<h5 id=”Introduction”>Introduction</h5>
-</id>
-
-<body>
-      
+     <h3 id="Abstract">Abstract</h3>
 <p class="ex1">
 <pre>
-“Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-to improve the classification model. Various strategies have been proposed including; Query by
-Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-labels. After adding the newly labeled instances to the current training set, a revised model is
-subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-learning at each epoch. The process is continued until some stopping criterion has been met, such as
-reaching a stage where information from the selected instances is contrary to the model, causing the
-classifier confidence to drop, as in Vlachos (2008).”  
+This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous classifier pool is selected at each learning epoch.
+Our goal is to achieve greater incremental improvement in accuracy, compared to using a single type of classification model throughout the process.
+The strategy is evaluated on benchmark data sets. We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive active learning
+and traditional machine learning approaches. Our results show that..We conclude that..
+
 </pre>
 </p>
 
-<id>
-<h6 id=”Analysis and discussion”>Analysis and discussion</h6>
-</id>
+    <h3 id="Introduction">Introduction</h3>
+  <p class="ex1">
+    <pre>
+“Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an intelligent machine through the interaction of an oracle with the machine system,
+over a sequence of learning epochs. A distinctive component in an active system is the querying strategy, used to sample candidate training instances from a pool and evaluate them for informativeness,
+i.e., their potential to improve the classification model. Various strategies have been proposed including; Query by Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001),
+uncertainty sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller, 2001). Irrespective of how the most informative pattern instances are chosen at each
+epoch they are presented for labeling, to a machine (database) or human oracle that has knowledge of the class labels. After adding the newly labeled instances to the current training set,
+a revised model is subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of learning at each epoch.
+The process is continued until some stopping criterion has been met, such as reaching a stage where information from the selected instances is contrary to the model,
+causing the classifier confidence to drop, as in Vlachos (2008).”
+    </pre>
+  </p>
+   
+  <h3 id=”Analysis and discussion”>Analysis and discussion</h3>
 
-Table 1: Data on cost and lifespan of bridge repairs
-<table>
-<tr>
-  <th>£ Cost of repairs</th>
-  <th> Lifespan of repairs (years)</th>
-</tr>
-<tr>
-  <td>0.7 m</td>
-  <td>2</td>
-</tr>
-<tr>
-  <td>3.3 m</td>
-  <td>4</td>
-</tr>
-<tr>
-  <td>2.6 m</td>
-  <td>5</td>
-</tr>
-<tr>
-  <td>17.4 m</td>
-  <td>7</td>
-</tr>
-<tr>
-  <td>8.8 m</td>
-  <td>9</td>
-</tr>
-</table>  
+    <p class= "ex1">
+    </p>
 
-<id>
-<h7 id=”References”>References</h7>
-</id>
 
-<head>
-<title>Monthly Sales Chart</title>
-<!-- Include Google Charts API -->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-</head>
-<body>
-<!-- Create a div element to hold the chart -->
-<div id="chart_div" style="width: 600px; height: 400px;"></div>
-</body>
+
+    Table 1: Data on cost and lifespan of bridge repairs
+    <table>
+      <tr>
+        <th>£ cost of repair</th>
+        <th>Lifespan of repairs(years)</th>
+      </tr>
+      <tr>
+        <td>0.7 m</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3.3 m</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>2.6 m</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>17.4 m</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8.8 m</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <h3 id="References">References</h3>
+<p>
+<pre>
+Angluin, D (1988), Queries and concept learning. Machine learning 2, (4), 319-342.
  
-<script>
-// Load the corechart package and set a callback function
-google.chart.load('current', { 'packages': ['corechart'] });
-google.chart.setOnLoadCallback(drawChart);
+Brinker, K (2003), Incorporating Diversity in Active Learning with Support Vector Machines, Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003).
+Bruzzone, L, Chi, M and Marconcini, M (2006), A novel transductive SVM for semisupervised classication of remote-sensing images, IEEE Transactions on Geoscience and Remote Sensing, 44, (11), 3363.
 
-// Callback function to draw the collum chart
-function drawChart() {
- //Create a DataTavle with columns for month and sales
- var data = new google.visualization.DataTable();
- data.addColumn('number', 'Year');
- data.addColumn('number', 'London');
- data.addColumn('number', 'Birmingham');
- data.addColumn('number', 'Edinburgh');
-
-// Add data for each year and city
-data.addRows([
- [2013, 8414000, 1092200, 495000]
- [2014, 8661000, 1113000, 507000]
- [2015, 8916000, 1137100, 519000]
- [2016, 9177000, 1141800, 531000]
- [2017, 9426000, 1142500, 543000]
- [2018, 9648000, 1153900, 554000]
-]);
-// Set chart options
-var options = {
- title: 'City Population Trends (2013-2023)',
- hAxis: { title: 'Year' },
- vAxis: { title: 'Population' },
- colors: ['#3366cc', #dc3912, #ff9900'], //Line colors for each city
- CurveType: 'function', //Display lines smoothly
- legend; { position: 'bottom' } //Display legend at the bottom
-};
-// Create a line chart and place it in the 'chart_div' element
-var char = new google.visulization.Linechart(document.getElementById('chart_div)
-chart.draw(data, options);
-}
-  </script>
-      </html>
+Bruzzone, L and Persello, C (2009), Active learning for classification of remote sensing images.
+ 
+In: Geoscience and Remote Sensing Symposium, 2009 IEEE International, IGARSS 2009, 3.
+ 
+Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margin classifiers. In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA, 111-118.
+</pre>    
+</p>
+</html>
