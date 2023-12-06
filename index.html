@@ -309,10 +309,10 @@ document.getElementById("date&time").innerHTML = d;
       showSlide();
     }
 
-  function showSlideNumber(slideNumber) {
+    function showSlideNumber(slideNumber) {
     currentSlide = slideNumber - 1;
     showSlide();
-  }
+    } 
   </script>
 
   <div id="slide-container">
@@ -323,7 +323,7 @@ document.getElementById("date&time").innerHTML = d;
     <button class="button" onclick= "nextSlide()">Next</button>
   </div>
 
-  <div class="button-number-container">  
+  <div class="slide-number-container">  
     <button class="button" onstick="showSlideNumber(1)">1</button>
     <button class="button" onstick="showSlideNumber(2)">2</button>
     <button class="button" onstick="showSlideNumber(3)">3</button>
@@ -347,7 +347,7 @@ document.getElementById("date&time").innerHTML = d;
 
     .button {
       padding: 10px 20px;
-      background-color: #4CAF50
+      background-color: #4CAF50;
       colour: white;
       border: none;
       border-radius: 5px;
@@ -355,7 +355,8 @@ document.getElementById("date&time").innerHTML = d;
       cursor: pointer;
       margin: 0 5px;
     }
-    .slide-number-container {
+    
+      .slide-number-container {
       position: absolute;
       bottom: 0;
       left: 50%;
